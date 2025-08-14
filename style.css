@@ -24,6 +24,25 @@ body{
     display: flex;
     flex-direction: column;
     border: none;
-    box-shadow: 0 0 10px black;
-}
-.{}
+    gap: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(81, 133, 3);
+ }
+ h3{
+    font-size: 30px;
+    color: green;
+    text-transform: capitalize;
+ }
+ h1{
+    font-size: 50px;
+    color: green;
+    text-transform: capitalize;
+    text-shadow: 0 0 10px greenyellow;    
+ }
+ h2{
+    font-size: 40px;
+    color: greenyellow;
+    text-transform: capitalize;
+ }
