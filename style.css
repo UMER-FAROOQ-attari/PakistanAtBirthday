@@ -7,6 +7,7 @@
 }
 
 body {
+    background-color: rgba(210, 254, 144, 0.556);
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -16,6 +17,9 @@ body {
 
 .pkbirth {
   width: 80%;
+  background-image: url(./downloadq.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -40,6 +44,9 @@ body {
   align-items: center;
   box-shadow: 0 0 10px rgb(81, 133, 3);
   position: relative; 
+  transition: all 1s;
+
+
 }
 
 .pkbirth div::before {
