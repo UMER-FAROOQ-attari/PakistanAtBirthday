@@ -5,6 +5,7 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 body {
   width: 100%;
   min-height: 100vh;
@@ -12,13 +13,19 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
 .pkbirth {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   height: 100%;
+  box-shadow: 0 0 30px seagreen;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
 }
+
 .pkbirth div {
   width: 250px;
   height: 250px;
@@ -26,26 +33,47 @@ body {
   flex-direction: column;
   border: none;
   gap: 20px;
+  background-image: url('./download.jpg');
   color: lightgreen;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 10px rgb(81, 133, 3);
+  position: relative; 
 }
+
+.pkbirth div::before {
+  content: ''; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.672); 
+  border-radius: 10px; 
+  z-index: 1; 
+}
+
 h3 {
   font-size: 30px;
   text-transform: capitalize;
+  z-index: 2;
 }
+
 h1 {
   font-size: 50px;
   color: green;
   text-transform: capitalize;
   text-shadow: 0 0 10px greenyellow;
+  z-index: 2;
 }
+
 h2 {
   font-size: 40px;
   text-transform: capitalize;
+  z-index: 2; 
 }
+
 .pkbirth div:hover {
   width: 260px;
   height: 260px;
