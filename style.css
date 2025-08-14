@@ -9,8 +9,21 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 .pkbirth{
+    width: 80%;
     display: flex;
-    
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
 }
+.pkbirth div{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-shadow: 0 0 10px black;
+}
+.{}
